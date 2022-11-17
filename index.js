@@ -33,7 +33,7 @@ app.get("/", (_, res) => {
       }
     })
     .on("end", () => {
-      res.send(`<div>
+      res.send(`<div style="display: flex; flex-direction: column; align-items: center">
       <h1 style="margin-top: 50px">
         The most popular answer is : ${csvStatistic["MostPopular"]["topAnswer"]} with ${csvStatistic["MostPopular"]["topCount"]} score. 
       </h1>
